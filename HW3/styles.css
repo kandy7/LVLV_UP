@@ -1,0 +1,66 @@
+body{
+    background: whitesmoke;
+    margin-top: 5%;
+}
+
+.row{
+    justify-content: center;
+    display: flex;
+    grid-gap: 1%;
+    margin-top:1%;
+}
+
+.square {
+    border-radius: 5%;
+    width:15%;
+     height: 50%;
+}
+.text{
+    text-align: center;
+    font-family: Georgia;
+    margin: auto;
+    font-size: 100%;
+    font-weight: bold;
+}
+.red{
+    background-color: crimson;
+}
+.blue{
+    background-color: cornflowerblue;
+}
+.green{
+    background-color: forestgreen;
+}
+.yellow{
+        background-color: gold;
+}
+.rose_pink{
+    background-color: #db54ff;
+}
+.light_red{
+    background-color: #f49180;
+}
+.magenta_pink{
+    background-color: #f0d5ff;
+}
+.malachite{
+    background-color: #0bda51;
+}
+.blue_magenta{
+    background-color: #4429d0;
+}
+.dark_red{
+    background-color: #610d00;
+}
+.unknown{
+    background-color: #867982;
+}
+.cyan{
+    background-color: cyan;
+}
+.gray{
+    background-color: #6d6d6d ;
+}
+.red_orange{
+    background-color: #911a00;
+}
