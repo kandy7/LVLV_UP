@@ -4,6 +4,7 @@ body{
 }
 
 .row{
+    height:15vh;
     justify-content: center;
     display: flex;
     grid-gap: 1%;
