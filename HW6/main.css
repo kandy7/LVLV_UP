@@ -1,0 +1,85 @@
+body{
+    box-sizing: border-box;
+}
+.container{
+    margin: 0;
+    position: relative;
+}
+span{
+    display: block;
+    position: relative;
+    background: gray;
+    border-radius: 6px;
+    height:5px;
+    width: 25px;
+    margin:0 0  3px 25px;
+    opacity: 1;
+    z-index: 1;
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+    background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+    opacity 0.55s ease;
+
+}
+
+#click{
+    position: relative;
+    z-index: 2;
+    width: 32px;
+    height: 35px;
+    display: block;
+    top: -25px;
+    left: 20px;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.container input:checked ~ span
+{
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #232323;
+}
+
+.container input:checked ~ span:nth-last-child(3)
+{
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+.container  input:checked ~ span:nth-last-child(2)
+{
+    transform: rotate(-45deg) translate(0, -1px);
+}
+
+.menu-page{
+    position: relative;
+    width: 350px;
+    height: 350px;
+    margin: -90px 0 0 calc(20px - 100%);
+    background-color: cornflowerblue;
+    border-radius: 10px;
+    z-index: 0;
+    opacity: 1;
+    transition: all ease-in-out 0.3s;
+}
+
+input:checked~div{
+    transform-origin: -100% 0;
+    padding-left: 50px;
+    margin:-100px 0 0 20px;
+}
+
+ul{
+    padding-top: 20px;
+    list-style: none;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 30px;
+}
+li{
+    margin-bottom: 10px;
+}
+li:hover{
+    color: #0285fc;
+    cursor: pointer;
+}
