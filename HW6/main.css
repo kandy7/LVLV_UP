@@ -14,6 +14,7 @@ span{
     width: 25px;
     margin:0 0  3px 25px;
     z-index: 1;
+    transition: all 0.5s cubic-bezier(0.77,0.2,0.05,1.0)
 }
 
 .click{
@@ -40,6 +41,10 @@ span{
     transition: all ease-in-out 0.3s;
 }
 
+li{
+    margin-bottom: 10px;
+}
+
 input:checked~span{
     background: #0285fc;
 }
@@ -50,7 +55,6 @@ input:checked~div{
     margin:-100px 0 0 20px;
 }
 
-
 ul{
     padding-top: 20px;
     list-style: none;
@@ -58,9 +62,7 @@ ul{
     font-weight: bold;
     font-size: 30px;
 }
-li{
-    margin-bottom: 10px;
-}
+
 li:hover{
     color: #0285fc;
     cursor: pointer;
